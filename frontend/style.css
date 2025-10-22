@@ -2903,4 +2903,10 @@ body {
 
 @media (max-width: 413px) {
    /* ... existing styles for < 413px ... */
+}header nav button.active {
+  background: linear-gradient(90deg, #0078ff, #00c6ff);
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
 }
