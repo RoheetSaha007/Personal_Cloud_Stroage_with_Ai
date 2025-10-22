@@ -2604,4 +2604,206 @@ body {
         justify-content: center; /* Center footer links */
         gap: 20px;
     }
+}/* ============================================
+   RESPONSIVE DESIGN (Very Small Screens < 413px)
+   ============================================ */
+
+@media (max-width: 413px) {
+
+    body {
+        padding: 5px; /* Even less body padding */
+        padding-top: 50px; /* Adjust for smallest header */
+    }
+
+    /* --- Header --- */
+    .header-premium {
+        height: 50px; /* Smallest header */
+        padding: 0 10px;
+    }
+    .logo-container {
+        gap: 5px;
+    }
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+    }
+    .logo-icon i {
+        width: 16px;
+        height: 16px;
+    }
+    .logo-text {
+        font-size: 1.1rem; /* Smaller logo */
+    }
+    .logo-badge {
+        display: none; /* Hide badge on very small screens */
+    }
+    .nav-premium {
+        gap: 3px;
+    }
+    .nav-btn {
+        padding: 6px 8px; /* Smaller buttons */
+    }
+    .nav-btn i {
+        width: 16px;
+        height: 16px;
+    }
+    .user-section {
+        padding-left: 8px;
+        gap: 5px;
+    }
+
+    /* --- Main Content --- */
+    .container-premium {
+        margin-top: 65px; /* Adjust margin below header */
+        padding: 0 10px 20px;
+    }
+    .section-header {
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 1.5rem; /* Smaller titles */
+    }
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* --- Dashboard --- */
+    .stat-card-premium {
+        padding: 15px; /* Less padding */
+        gap: 10px;
+    }
+    .stat-icon {
+        width: 40px; /* Smaller icons */
+        height: 40px;
+        border-radius: 10px;
+    }
+    .stat-icon i {
+        width: 20px;
+        height: 20px;
+    }
+    .stat-label {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+    .stat-value {
+        font-size: 1.5rem; /* Smaller values */
+    }
+    .quick-stat {
+        padding: 15px;
+        gap: 10px;
+    }
+    .quick-stat-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* --- Files Section --- */
+    .search-bar-premium input {
+        padding: 10px 12px 10px 35px; /* Adjust search padding */
+        font-size: 0.9rem;
+    }
+    .search-input-wrapper i {
+        left: 12px;
+        width: 16px;
+        height: 16px;
+    }
+    .search-btn {
+        padding: 10px 15px; /* Smaller filter button */
+    }
+    .file-grid-premium {
+        gap: 12px; /* Reduce gap */
+    }
+    .file-item {
+        padding: 12px; /* Less padding */
+    }
+    .file-item-header {
+        margin-bottom: 8px;
+    }
+    .file-item-icon {
+        font-size: 1.8rem; /* Smaller icons/emojis */
+    }
+    .file-item-icon img {
+        width: 30px;
+        height: 30px;
+    }
+     .file-item-info h4 {
+        font-size: 1rem;
+     }
+     .file-item-info p {
+        font-size: 0.8rem;
+     }
+    .file-item-tags span {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+    }
+    .file-item-actions {
+        gap: 8px; /* Adjust button gap */
+    }
+    .file-item-actions button,
+    .file-item-actions a {
+        width: 32px; /* Smaller buttons */
+        height: 32px;
+        border-radius: 8px;
+    }
+     .file-item-actions i {
+         width: 14px; /* Smaller icons in buttons */
+         height: 14px;
+     }
+
+
+    /* --- Upload Section --- */
+    .upload-area-premium {
+        padding: 25px 15px; /* Less padding */
+    }
+    .upload-icon {
+         width: 50px;
+         height: 50px;
+         margin-bottom: 10px;
+    }
+    .upload-icon i {
+        width: 25px;
+        height: 25px;
+    }
+     .upload-text {
+        font-size: 1rem;
+     }
+     .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+     }
+     .feature-item {
+         padding: 15px;
+     }
+     .feature-icon {
+        width: 45px;
+        height: 45px;
+     }
+     .feature-icon i {
+        width: 20px;
+        height: 20px;
+     }
+
+     /* --- Contact & Rating (Dashboard) --- */
+     .contact-section-dashboard {
+        padding: 30px 0;
+     }
+     .contact-card-dashboard {
+        padding: 20px;
+     }
+     .rating-section-dashboard {
+        padding: 25px;
+     }
+     .star-dashboard {
+        width: 30px;
+        height: 30px;
+     }
+
+    /* --- Footer --- */
+     .footer-premium {
+        padding: 20px 10px;
+     }
+     .footer-content p, .footer-links a {
+        font-size: 0.8rem;
+     }
 }
