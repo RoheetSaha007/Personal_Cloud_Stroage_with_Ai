@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudVault - AI-Powered Cloud Storage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Animated background with particles and 3D effects -->
+    <div class="animated-bg">
+        <canvas id="particle-canvas"></canvas>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Removed signup/login page - now directly shows dashboard -->
+    <!-- Added smooth scroll indicator -->
+    <div class="scroll-indicator"></div>
+
+    <!-- Header with user info -->
+    <header class="header-premium" id="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i data-feather="zap"></i>
+                </div>
+                <h1 class="logo-text">CloudVault</h1>
+                <span class="logo-badge">AI Pro</span>
+            </div>
+            <nav class="nav-premium">
+                <button data-tab="dashboard" class="nav-btn active">
+                    <i data-feather="grid"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button data-tab="files" class="nav-btn">
+                    <i data-feather="folder"></i>
+                    <span>Files</span>
+                </button>
+                <button data-tab="upload" class="nav-btn">
+                    <i data-feather="upload"></i>
+                    <span>Upload</span>
+                </button>
+                <div class="user-section">
+                    <!-- Hardcoded user name as ROHEET -->
+                    <span class="user-name">ROHEET</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-premium" id="main-container">
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="tab-content active">
+            <div class="section-header">
+                <!-- Updated welcome title to show hardcoded name -->
+                <h2 class="section-title">Welcome, ROHEET!</h2>
+                <p class="section-subtitle">Your AI-powered cloud storage solution</p>
+            </div>
+
+            <div class="stats-grid-premium">
+                <div class="stat-card-premium" data-stat="files">
+                    <div class="stat-card-bg"></div>
+                    <div class="stat-card-content">
+                        <div class="stat-icon">
+                            <i data-feather="file"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Files</p>
+                            <h3 class="stat-value" id="total-files">0</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card-border"></div>
+                </div>
+
+                <div class="stat-card-premium" data-stat="storage">
+                    <div class="stat-card-bg"></div>
+                    <div class="stat-card-content">
+                        <div class="stat-icon">
+                            <i data-feather="database"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p class="stat-label">Storage Used</p>
+                            <h3 class="stat-value" id="total-storage">0 MB</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card-border"></div>
+                </div>
+
+                <div class="stat-card-premium full-width" data-stat="types">
+                    <div class="stat-card-bg"></div>
+                    <div class="stat-card-content">
+                        <div class="stat-icon">
+                            <i data-feather="pie-chart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <p class="stat-label">File Types Distribution</p>
+                            <h3 class="stat-value" id="file-types">Loading...</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card-border"></div>
+                </div>
+            </div>
+
+            <!-- Added quick stats section -->
+            <div class="quick-stats-section">
+                <div class="quick-stat">
+                    <div class="quick-stat-icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <div class="quick-stat-content">
+                        <p class="quick-stat-label">Upload Speed</p>
+                        <p class="quick-stat-value">Lightning Fast</p>
+                    </div>
+                </div>
+                <div class="quick-stat">
+                    <div class="quick-stat-icon">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <div class="quick-stat-content">
+                        <p class="quick-stat-label">Security</p>
+                        <p class="quick-stat-value">End-to-End</p>
+                    </div>
+                </div>
+                <div class="quick-stat">
+                    <div class="quick-stat-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <div class="quick-stat-content">
+                        <p class="quick-stat-label">AI Optimization</p>
+                        <p class="quick-stat-value">Active</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moved "Get in Touch" section to dashboard only -->
+            <section class="contact-section-dashboard">
+                <div class="contact-container-dashboard">
+                    <div class="contact-header-dashboard">
+                        <h2 class="contact-title-dashboard">Get in Touch</h2>
+                        <p class="contact-subtitle-dashboard">Connect with us for support and inquiries</p>
+                    </div>
+
+                    <div class="contact-grid-dashboard">
+                        <div class="contact-card-dashboard">
+                            <div class="contact-card-icon-dashboard">
+                                <i data-feather="user"></i>
+                            </div>
+                            <h3 class="contact-card-title-dashboard">Developer</h3>
+                            <p class="contact-card-value-dashboard">Roheet Saha</p>
+                        </div>
+
+                        <div class="contact-card-dashboard">
+                            <div class="contact-card-icon-dashboard">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <h3 class="contact-card-title-dashboard">Email</h3>
+                            <a href="mailto:roheetsaha2955@gmail.com" class="contact-card-value-dashboard contact-link-dashboard">roheetsaha2955@gmail.com</a>
+                        </div>
+
+                        <div class="contact-card-dashboard">
+                            <div class="contact-card-icon-dashboard">
+                                <i data-feather="phone"></i>
+                            </div>
+                            <h3 class="contact-card-title-dashboard">Phone</h3>
+                            <a href="tel:+918509311748" class="contact-card-value-dashboard contact-link-dashboard">+91 8509311748</a>
+                        </div>
+
+                        <div class="contact-card-dashboard">
+                            <div class="contact-card-icon-dashboard">
+                                <i data-feather="message-circle"></i>
+                            </div>
+                            <h3 class="contact-card-title-dashboard">WhatsApp</h3>
+                            <!-- Fixed WhatsApp link to use proper wa.me format -->
+                            <a href="https://wa.me/918509311748" target="_blank" class="contact-card-value-dashboard contact-link-dashboard">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <!-- Added star rating section -->
+                    <div class="rating-section-dashboard">
+                        <h3 class="rating-title-dashboard">Rate Our Service</h3>
+                        <div class="star-rating-dashboard" id="star-rating">
+                            <i data-feather="star" class="star-dashboard" data-value="1"></i>
+                            <i data-feather="star" class="star-dashboard" data-value="2"></i>
+                            <i data-feather="star" class="star-dashboard" data-value="3"></i>
+                            <i data-feather="star" class="star-dashboard" data-value="4"></i>
+                            <i data-feather="star" class="star-dashboard" data-value="5"></i>
+                        </div>
+                        <p class="rating-feedback-dashboard" id="rating-feedback">Click to rate</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Files Section -->
+        <section id="files-section" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">My Files</h2>
+                <p class="section-subtitle">Manage and organize your cloud storage</p>
+            </div>
+
+            <div class="search-bar-premium">
+                <div class="search-input-wrapper">
+                    <i data-feather="search"></i>
+                    <input type="text" id="search-input" placeholder="Search files by name or type...">
+                </div>
+                <button id="search-button" class="search-btn">
+                    <i data-feather="filter"></i>
+                </button>
+            </div>
+
+            <div id="file-list" class="file-grid-premium">
+                <p class="loading-msg">Loading files...</p>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload-section" class="tab-content">
+            <div class="section-header">
+                <h2 class="section-title">Upload Files</h2>
+                <p class="section-subtitle">Drag & drop or select files to upload</p>
+            </div>
+
+            <div class="upload-area-premium">
+                <div class="upload-content">
+                    <div class="upload-icon">
+                        <i data-feather="upload-cloud"></i>
+                    </div>
+                    <p class="upload-text">Drag & drop files here or click to browse</p>
+                    <input type="file" id="file-input" style="display: none;" multiple>
+                    <button id="browse-button" class="btn-primary">Select Files</button>
+                </div>
+
+                <div id="upload-progress-container" class="upload-progress" style="display: none;">
+                    <p id="upload-filename" class="upload-filename"></p>
+                    <div class="progress-bar-container">
+                        <div id="upload-progress-bar" class="progress-bar"></div>
+                    </div>
+                    <p id="upload-percentage" class="upload-percentage">0%</p>
+                </div>
+
+                <div id="upload-result" class="upload-result"></div>
+            </div>
+
+            <div class="upload-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Lightning Fast</h4>
+                        <p>Upload at maximum speed</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i data-feather="lock"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Secure</h4>
+                        <p>End-to-end encryption</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="infinity-symbol">∞</span>
+                    </div>
+                    <div class="feature-text">
+                        <h4>Unlimited ∞</h4>
+                        <p>No size restrictions</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h4>AI Optimized</h4>
+                        <p>Smart file organization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Added image preview modal for file previews -->
+    <div id="preview-modal" class="preview-modal">
+        <div class="preview-modal-content">
+            <button class="preview-close-btn" id="preview-close">
+                <i data-feather="x"></i>
+            </button>
+            <img id="preview-image" src="/placeholder.svg" alt="Preview">
+            <div class="preview-info">
+                <h3 id="preview-filename"></h3>
+                <p id="preview-summary"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added PDF preview modal for PDF file previews -->
+    <div id="pdf-preview-modal" class="pdf-preview-modal">
+        <div class="pdf-preview-modal-content">
+            <button class="pdf-preview-close-btn" id="pdf-preview-close">
+                <i data-feather="x"></i>
+            </button>
+            <div class="pdf-preview-header">
+                <h3 id="pdf-preview-filename"></h3>
+            </div>
+            <div id="pdf-preview-container" class="pdf-preview-container">
+                <canvas id="pdf-canvas"></canvas>
+            </div>
+            <div class="pdf-preview-controls">
+                <button id="pdf-prev-page" class="pdf-control-btn">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <span id="pdf-page-info" class="pdf-page-info">Page 1</span>
+                <button id="pdf-next-page" class="pdf-control-btn">
+                    <i data-feather="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed footer positioning to stay at bottom -->
+    <footer class="footer-premium" id="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CloudVault. Powered by AI. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
