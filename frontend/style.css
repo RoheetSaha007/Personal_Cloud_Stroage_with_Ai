@@ -2810,7 +2810,7 @@ body {
    RESPONSIVE DESIGN (Medium Screens < 905px)
    ============================================ */
 
-@media (max-width: 905px) {
+@media (max-width: 920px) {
 
     body {
         padding-top: 70px; /* Ensure space for header */
