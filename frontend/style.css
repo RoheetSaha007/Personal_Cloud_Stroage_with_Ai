@@ -2806,4 +2806,101 @@ body {
      .footer-content p, .footer-links a {
         font-size: 0.8rem;
      }
+}/* ============================================
+   RESPONSIVE DESIGN (Medium Screens < 905px)
+   ============================================ */
+
+@media (max-width: 905px) {
+
+    body {
+        padding-top: 70px; /* Ensure space for header */
+    }
+
+    .header-premium {
+        padding: 0 20px; /* Slightly reduce header padding */
+    }
+
+    .container-premium {
+        padding: 0 20px 40px; /* Reduce container padding */
+        margin-top: 90px; /* Adjust margin below header */
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* --- Dashboard --- */
+    .stats-grid-premium {
+        /* Keep 3 columns if possible, but adjust gap */
+        gap: 20px;
+    }
+     .stat-card-premium {
+        padding: 25px; /* Slightly reduce padding */
+     }
+     .stat-icon {
+        width: 60px;
+        height: 60px;
+     }
+     .stat-icon i {
+        width: 30px;
+        height: 30px;
+     }
+     .stat-value {
+        font-size: 2rem;
+     }
+    .quick-stats-section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Allow wrapping earlier */
+        gap: 15px;
+    }
+
+    /* --- Files Section --- */
+    .file-grid-premium {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Allow fewer columns */
+        gap: 20px;
+    }
+     .file-item {
+        padding: 20px;
+     }
+
+    /* --- Upload Section --- */
+    .upload-area-premium {
+        padding: 50px 30px;
+    }
+    .upload-features {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+     /* --- Contact & Rating (Dashboard) --- */
+     .contact-grid-dashboard {
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 20px;
+     }
+     .contact-card-dashboard {
+        padding: 30px;
+     }
+
+    /* --- Footer --- */
+    .footer-premium {
+        padding: 40px 20px;
+    }
+    .footer-content {
+        gap: 20px;
+    }
+    .footer-links {
+        gap: 25px;
+    }
+}
+
+/* --- Keep the other media queries below this one --- */
+
+@media (max-width: 630px) {
+    /* ... existing styles for < 630px ... */
+}
+
+@media (max-width: 413px) {
+   /* ... existing styles for < 413px ... */
 }
