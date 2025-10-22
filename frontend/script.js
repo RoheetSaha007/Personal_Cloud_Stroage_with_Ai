@@ -4,7 +4,7 @@
 // ============================================
 
 // --- CONFIG ---
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = "https://personal-cloud-stroage-with-ai.onrender.com"
 const feather = window.feather // Declare feather variable
 
 class UserManager {
